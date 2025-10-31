@@ -1,0 +1,238 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  background-color: rgb(250, 248, 245);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+
+.navbar{
+    height: 3rem;
+    width: 100%;
+    background-color:rgba(255, 250, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap ;
+    position: sticky;
+    top: 0;
+}
+
+.nav-icon{
+    line-height: 5px;
+    font-weight: 600;
+    display: none;
+    margin-right: 1rem;
+}
+
+.nav-icon:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .nav-icon{
+        display: inline-block;
+    }
+    .navbar .option{
+        display: none;
+    }
+}
+
+.nav-img{
+    display: flex;
+    align-items: center;
+}
+
+.navbar img{
+    height: 1.75rem;
+    padding-left: 0.5rem;
+}
+
+.nav-img div{
+    font-weight: 900;
+    color: rgb(73, 7, 7);
+    font-size: 20px;
+    margin:0.25rem;  
+}
+
+.option button{
+    background-color: rgb(255, 250, 238);
+    margin-right: 0.4rem;
+    border: none;
+    font-family: "Montserrat", sans-serif;;
+    font-weight: 900;
+    transition: 0.2s ease-in;
+}
+
+.option button:hover{
+    font-size: 15px;
+    color: brown;
+    cursor: pointer;
+}
+
+.intro{
+    height: 15rem;
+    width: 100%;
+    background-image: url(./assets/backgraund.jpg);
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.intro .heading{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-left: 2rem; 
+    margin-bottom: 1rem;
+}
+
+.heading p{
+    margin: 0;
+    
+}
+
+.intro-btn{
+    padding-left: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro-btn button{
+    height: 2rem;
+    border: 2px solid white ;
+    font-weight:600;
+    border-radius: 5px;
+    margin-right: 0.75rem;
+}
+
+.intro-btn button:hover{
+    border: 2px solid brown;
+    color: brown;
+    cursor: pointer;
+}
+.content{
+    background-color: rgb(255, 250, 238);
+}
+.content .menu{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: brown;
+}
+.cards-container{
+    padding: 0.5rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    border-radius: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.card .title{
+    font-weight: 700;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.card .info{
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.card .price{
+    font-weight: 600;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card:hover{
+    box-shadow: 0.35rem 0.25rem 1rem black;
+}
+
+.contact{
+    background-color: rgb(255, 240, 219);
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: brown;
+    text-align: center;
+    margin: 1rem;
+}
+
+.cont-info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cont-info input{
+    outline: none;
+    width: 19rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    border: 2px solid #f0ffff;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.cont-msg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cont-msg input{
+    outline: none;
+    width: 55%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    border: 2px solid #f0ffff;
+    margin: 1rem 0.5rem 2rem 0.5rem;
+}
+
+.social-media{
+    color:black;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.social-media i{
+    margin: 0 0.45rem 2rem 0;
+    transition: ease-in;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.social-media i:hover{
+    font-size: 18px;
+}
