@@ -81,7 +81,7 @@ body{
 .intro{
     height: 15rem;
     width: 100%;
-    background-image: url(./assets/backgraund.jpg);
+    background-image: url(./assets/backgraund.webp);
     background-size: auto;
     display: flex;
     flex-direction: column;
